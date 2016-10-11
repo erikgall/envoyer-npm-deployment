@@ -1,0 +1,13 @@
+# Hook 1
+cd {{release}}
+cp package.json {{project}}/package.json
+# Hook 2
+cd {{project}}
+npm install
+# Hook 3
+npm update
+# Hook 4
+ls -s {{project}}/node_modules {{release}}/node_modules
+# Hook 5
+cd {{release}}
+gulp --production
