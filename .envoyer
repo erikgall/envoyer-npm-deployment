@@ -7,7 +7,7 @@ npm install
 # Hook 3
 npm update
 # Hook 4
-ls -s {{project}}/node_modules {{release}}/node_modules
+ln -s {{project}}/node_modules {{release}}/node_modules
 # Hook 5
 cd {{release}}
 gulp --production
