@@ -15,7 +15,7 @@ Below are the steps required to download your node dependencies and compile your
 
 ## Performance
 
-After the deployment hook runs for the first time, the deployment time jurastically decreases. This is because we need to download all the node packages during the first deployment and then from there we symlink the project's node_modules directory to the release's node_modules directory.
+After the deployment hook runs for the first time, the deployment time drastically decreases. This is because we need to download all the node packages during the first deployment and then from there we symlink the project's node_modules directory to the release's node_modules directory.
 
 1. Running NPM install and gulp on server w/out symlinks (see example below): 4 min
 2. Using .envoyer deployment hook (first deployment): 2 min
